@@ -64,9 +64,3 @@ Podaj cel projektu i katalog docelowy. Skill jest przeznaczony do nowych projekt
 Opisy dokumentów projektu są utrzymywane w globalnym `AGENTS.md`. Jeśli użytkownik ich nie ma, skill korzysta z odpowiedniej części dołączonego `Agent.md`, bez powielania opisów w swoim punkcie wejścia.
 
 Instalacja skilla nie instaluje globalnych zasad. Opcjonalnie przejrzyj `Agent.md`, dopasuj go do własnych preferencji i włącz wybrane zasady do `~/.codex/AGENTS.md`. Zachowaj istniejące instrukcje. Domyślną lokalizację opisuje [dokumentacja AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md).
-
-## Udostępnianie na GitHubie
-
-Publikuj cały folder z powyższymi plikami. Może być osobnym repozytorium albo częścią repozytorium zawierającego również skill Python. Użytkownik instaluje folder pod nazwą `nextjs-project-init`.
-
-Zestaw składa się z instrukcji i materiałów Markdown; nie zawiera automatycznego instalatora ani wymagań związanych z kluczami API. Do wykonania inicjalizacji potrzebne są zgodne z Next.js Node.js i npm, Git oraz dostęp do pobrania generatora i zależności.
