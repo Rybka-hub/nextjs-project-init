@@ -1,6 +1,8 @@
 ---
 name: nextjs-project-init
 description: "Zainicjalizuj nową aplikację Next.js i przygotuj strukturę oraz .gitignore. Używaj przy tworzeniu projektu Next.js, nie przy zwykłym iterowaniu istniejącej aplikacji."
+metadata:
+  version: "1.0.0"
 ---
 
 # Praca agentowa nad aplikacjami Next.js

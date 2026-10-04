@@ -19,13 +19,26 @@ Skill realizuje inicjalizację. Funkcje aplikacji, jej architektura i integracje
 | [SKILL.md](SKILL.md) | Punkt wejścia: nazwa, zakres i instrukcje wykonania skilla. |
 | [Nextjs.md](Nextjs.md) | Sposób inicjalizacji, struktura projektu i wzór `.gitignore`. |
 | [Agent.md](Agent.md) | Pomocniczy wzór zasad pracy i opisów dokumentacji. |
+| [CHANGELOG.md](CHANGELOG.md) | Historia opublikowanych wersji i ich zmian. |
 | `README.md` | Cel zestawu, instalacja i przykłady użycia. |
 
 Nie kopiuj samego `SKILL.md` — korzysta on z pozostałych materiałów w folderze.
 
+## Wersjonowanie
+
+Numer zainstalowanej wersji znajduje się w `metadata.version` w [SKILL.md](SKILL.md). Każde wydanie ma tag Git `vX.Y.Z` i odpowiadające mu [wydanie na GitHubie](https://github.com/Rybka-hub/nextjs-project-init/releases). Historię zmian opisuje [CHANGELOG.md](CHANGELOG.md).
+
+Stosujemy SemVer:
+
+- `PATCH`, np. `1.0.1`: poprawki i doprecyzowania bez zmiany przyjętego standardu.
+- `MINOR`, np. `1.1.0`: rozszerzenia zgodne z dotychczasowym sposobem użycia.
+- `MAJOR`, np. `2.0.0`: zmiany zasad lub struktury wymagające dostosowania dotychczasowego sposobu użycia.
+
+Oba skille są wersjonowane niezależnie. Opublikowanego tagu nie zmieniamy; kolejne poprawki otrzymują nowy numer. Gałąź `main` może zawierać zmiany jeszcze niewydane — do instalacji wybieraj konkretne wydanie. Aktualizacja skilla nie modyfikuje wcześniej utworzonych projektów.
+
 ## Instalacja w Codexie
 
-1. Pobierz z GitHuba lub lokalnego zestawu cały folder zawierający te cztery pliki.
+1. Pobierz wybraną wersję ze strony [wydań](https://github.com/Rybka-hub/nextjs-project-init/releases) przez „Source code (zip)” i rozpakuj archiwum. Możesz też użyć całego folderu z lokalnego zestawu.
 2. Skopiuj go do `~/.agents/skills/nextjs-project-init/`. `~` oznacza katalog użytkownika; na Windows jest to `%USERPROFILE%`.
 3. Sprawdź, czy plik wejściowy ma ścieżkę `~/.agents/skills/nextjs-project-init/SKILL.md`, bez dodatkowego zagnieżdżenia folderu.
 4. Jeśli skill nie pojawi się na liście, uruchom Codexa ponownie.
