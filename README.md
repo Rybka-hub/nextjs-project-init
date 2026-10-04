@@ -39,11 +39,13 @@ Oba skille są wersjonowane niezależnie. Opublikowanego tagu nie zmieniamy; kol
 ## Instalacja w Codexie
 
 1. Pobierz wybraną wersję ze strony [wydań](https://github.com/Rybka-hub/nextjs-project-init/releases) przez „Source code (zip)” i rozpakuj archiwum. Możesz też użyć całego folderu z lokalnego zestawu.
-2. Skopiuj go do `~/.agents/skills/nextjs-project-init/`. `~` oznacza katalog użytkownika; na Windows jest to `%USERPROFILE%`.
-3. Sprawdź, czy plik wejściowy ma ścieżkę `~/.agents/skills/nextjs-project-init/SKILL.md`, bez dodatkowego zagnieżdżenia folderu.
+2. Jeśli Twoja instalacja Codexa wczytuje własne skille z `~/.codex/skills/`, skopiuj cały folder do `~/.codex/skills/nextjs-project-init/`. `~` oznacza katalog użytkownika; na Windows jest to `%USERPROFILE%`, czyli docelowo `%USERPROFILE%\.codex\skills\nextjs-project-init\`.
+3. Sprawdź, czy `SKILL.md` znajduje się bezpośrednio w folderze `nextjs-project-init/`, bez dodatkowego zagnieżdżenia.
 4. Jeśli skill nie pojawi się na liście, uruchom Codexa ponownie.
 
-Instalację ograniczoną do jednego projektu wykonasz, umieszczając ten sam folder w `.agents/skills/nextjs-project-init/` w jego katalogu. Lokalizacje opisuje [oficjalna dokumentacja skilli Codexa](https://learn.chatgpt.com/docs/build-skills).
+Aktualna [oficjalna dokumentacja skilli Codexa](https://learn.chatgpt.com/docs/build-skills) wskazuje `~/.agents/skills/` jako lokalizację użytkownika. Jeśli Twoja instalacja korzysta z tego układu, użyj `~/.agents/skills/nextjs-project-init/`. Wybierz katalog, z którego Codex faktycznie wczytuje Twoje skille; nie kopiuj tego samego skilla do obu lokalizacji.
+
+Instalację ograniczoną do jednego projektu wykonasz, umieszczając ten sam folder w `.agents/skills/nextjs-project-init/` w jego katalogu.
 
 ## Użycie
 
